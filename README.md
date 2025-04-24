@@ -18,7 +18,7 @@ This is a simple React application that allows users to search for movies using 
 - **TMDB API**: For fetching movie data.
 - **React-use**: For debounce functionality.
 - **Appwrite**: BaaS service for saving all searching movie query from clients
-
+- **AWS S3 Service & Cloudfront**: For Deloyment
 ## Installation
 
 1. Clone the repository:
