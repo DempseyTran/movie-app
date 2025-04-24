@@ -9,6 +9,7 @@ This is a simple React application that allows users to search for movies using 
 - Debounced search to reduce API calls.
 - Error handling for API requests.
 - Loading indicator while fetching data.
+- Display 5 best movies that is search from clients
 
 ## Technologies Used
 
@@ -16,6 +17,7 @@ This is a simple React application that allows users to search for movies using 
 - **Vite**: Fast development build tool.
 - **TMDB API**: For fetching movie data.
 - **React-use**: For debounce functionality.
+- **Appwrite**: BaaS service for saving all searching movie query from clients
 
 ## Installation
 
@@ -28,9 +30,14 @@ This is a simple React application that allows users to search for movies using 
 ```bash
 npm install
 ```
-3. Create a .env.local file in the root directory and add your TMDB API key:
+3. Create a .env.local file in the root directory and add your TMDB API key and Some Appwrite key (Appwrite is BaaS for the App) :
 
-```bashVITE_TMDB_API_KEY=your_tmdb_api_key```
+```bash
+VITE_TMDB_API_KEY=your_tmdb_api_key
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_MOVIES_DB_ID=your_appwrite_moviedb_id
+VITE_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+```
 
 4. Start the development server:
 ```bash
@@ -38,18 +45,4 @@ npm run dev
 ```
 5. Open the app in your browser at: http://localhost:5173.
 
-### Project Structure
-trending-movie-app/
-├── src/
-│   ├── components/
-│   │   ├── Search.jsx       # Search bar component
-│   │   ├── MovieCard.jsx    # Movie card component
-│   ├── App.jsx              # Main application file
-│   ├── index.jsx            # Entry point
-├── public/
-│   ├── hero.png             # Hero banner image
-├── [.env.local](http://_vscodecontentref_/1)               # Environment variables
-├── [package.json](http://_vscodecontentref_/2)             # Project dependencies
-├── [vite.config.js](http://_vscodecontentref_/3)           # Vite configuration
-└── [README.md](http://_vscodecontentref_/4)                # Project documentation
 
