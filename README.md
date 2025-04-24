@@ -23,8 +23,8 @@ This is a simple React application that allows users to search for movies using 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/my-first-react-app.git
-   cd my-first-react-app
+   git clone https://github.com/DempseyTran/movie-app.git
+   cd movie-app
 
 2. Install dependencies:
 ```bash
